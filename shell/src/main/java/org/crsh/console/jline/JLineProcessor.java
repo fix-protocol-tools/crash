@@ -211,7 +211,6 @@ public class JLineProcessor implements Runnable, ConsoleDriver {
       }
       catch (IOException e) {
         LOG.log(Level.FINE, "Error during execution", e);
-        e.printStackTrace();
         return;
       }
     }
