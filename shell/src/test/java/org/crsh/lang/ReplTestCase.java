@@ -266,13 +266,14 @@ public class ReplTestCase extends AbstractShellTestCase {
     }
   }
 
-  public void testClassOptionBinding() {
-    lifeCycle.bindClass("cmd", ClassOptionBinding.class);
-    assertOk("repl groovy");
-    assertOk("a = cmd { o = 'foo_opt'; }");
-    assertOk("a()");
-    assertEquals("foo_opt", Commands.Parameterized.opt);
-  }
+
+//  public void testClassOptionBinding() {
+//    lifeCycle.bindClass("cmd", ClassOptionBinding.class);
+//    assertOk("repl groovy");
+//    assertOk("a = cmd { o = 'foo_opt'; }");
+//    assertOk("a()");
+//    assertEquals("foo_opt", Commands.Parameterized.opt);
+//  }
 
   public void testInClosure() {
     lifeCycle.bindClass("cmd", Commands.ProduceString.class);
